@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="chart-container">
     <h2>Expense Data (Bar Chart)</h2>
     <Bar :data="expenseChartData" :options="chartOptions" />
   </div>
@@ -43,9 +43,21 @@ export default defineComponent({
 </script>
 
 <style scoped>
-div {
-  max-width: 40vw;
-  max-height: 70vh;
-  margin: auto;
+.chart-container {
+  max-width: 45vw;
+  width: 100%;
+  max-height: 60vh;
+  margin: 20px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  color: #333;
 }
 </style>

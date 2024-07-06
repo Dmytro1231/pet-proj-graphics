@@ -27,9 +27,20 @@ export default defineComponent({
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 20px;
 }
+
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  color: #333;
+}
+
 .charts {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   width: 100%;
 }
 </style>
